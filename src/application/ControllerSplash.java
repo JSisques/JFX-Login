@@ -71,31 +71,31 @@ public class ControllerSplash {
 		ft.play();
 		
 		ft.setOnFinished(eventooo -> {
-			ScaleTransition ft2 = new ScaleTransition(Duration.seconds(1), imgLogo);
+			ScaleTransition ft2 = new ScaleTransition(Duration.seconds(0.3), imgLogo);
 			ft2.setToX(1);
 			ft2.setToY(1);
 			ft2.play();
 			
 			ft2.setOnFinished(eventooo2 -> {
-				ScaleTransition st = new ScaleTransition(Duration.seconds(0.5), imgLogo);
+				ScaleTransition st = new ScaleTransition(Duration.seconds(0.2), imgLogo);
 				st.setByX(0.3);
 				st.setByY(0.3);
 				st.play();
 
 				st.setOnFinished(evento1 -> {
-					ScaleTransition st1 = new ScaleTransition(Duration.seconds(0.5), imgLogo);
+					ScaleTransition st1 = new ScaleTransition(Duration.seconds(0.2), imgLogo);
 					st1.setByX(-0.3);
 					st1.setByY(-0.3);
 					st1.play();
 
 					st1.setOnFinished(evento2 -> {
-						ScaleTransition st2 = new ScaleTransition(Duration.seconds(0.5), imgLogo);
+						ScaleTransition st2 = new ScaleTransition(Duration.seconds(0.2), imgLogo);
 						st2.setByX(0.3);
 						st2.setByY(0.3);
 						st2.play();
 
 						st2.setOnFinished(evento3 -> {
-							ScaleTransition st3 = new ScaleTransition(Duration.seconds(0.5), imgLogo);
+							ScaleTransition st3 = new ScaleTransition(Duration.seconds(0.2), imgLogo);
 							st3.setByX(-0.3);
 							st3.setByY(-0.3);
 							st3.play();
