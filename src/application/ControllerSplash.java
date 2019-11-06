@@ -50,7 +50,6 @@ public class ControllerSplash {
 			loader.setLocation(Main.class.getResource("main.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();
 			Stage homeStage = new Stage();
-			homeStage.setTitle("Main Menu");
 			Scene scene = new Scene(page);
 			homeStage.initStyle(StageStyle.UNDECORATED);
 			homeStage.setScene(scene);
@@ -102,8 +101,9 @@ public class ControllerSplash {
 							st3.play();
 
 							st3.setOnFinished(evento4 -> {
-								TranslateTransition ft3 = new TranslateTransition(Duration.seconds(2), imgLogo);
-								ft3.setByY(1000);
+								FadeTransition ft3 = new FadeTransition(Duration.seconds(1), imgLogo);
+								ft3.setFromValue(1);
+								ft3.setToValue(0);
 								ft3.play();
 								
 								ft3.setOnFinished(evento5 -> {
