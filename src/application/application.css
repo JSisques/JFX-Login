@@ -1,0 +1,14 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.loginContainer {
+    -fx-background-radius: 50px;
+    -fx-background-color: rgba(255,255,255,0.7);
+}
+
+.button{
+	-fx-background-color: #BB336A;
+}
+
+.imgLogo{
+	-fx-border-radius: 50px;
+}
