@@ -2,6 +2,8 @@ package application;
 
 import java.io.IOException;
 
+import com.jfoenix.controls.JFXButton;
+
 import javafx.animation.FadeTransition;
 import javafx.animation.FillTransition;
 import javafx.animation.ScaleTransition;
@@ -69,13 +71,13 @@ public class ControllerSplash {
 		ft.setFromX(0);
 		ft.setFromY(0);
 		ft.play();
-		
+
 		ft.setOnFinished(eventooo -> {
 			ScaleTransition ft2 = new ScaleTransition(Duration.seconds(0.3), imgLogo);
 			ft2.setToX(1);
 			ft2.setToY(1);
 			ft2.play();
-			
+
 			ft2.setOnFinished(eventooo2 -> {
 				ScaleTransition st = new ScaleTransition(Duration.seconds(0.2), imgLogo);
 				st.setByX(0.3);
@@ -105,7 +107,7 @@ public class ControllerSplash {
 								ft3.setFromValue(1);
 								ft3.setToValue(0);
 								ft3.play();
-								
+
 								ft3.setOnFinished(evento5 -> {
 									Stage thisStage = (Stage) rootPane.getScene().getWindow();
 									thisStage.close();
@@ -121,5 +123,6 @@ public class ControllerSplash {
 			});
 		});
 	}
+
 
 }
