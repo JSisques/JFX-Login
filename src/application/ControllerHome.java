@@ -11,6 +11,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BackgroundImage;
 import javafx.util.Duration;
 
+/**
+ * 
+ * @author javi
+ *
+ */
 public class ControllerHome {
 
 	private boolean navClosed;
@@ -60,6 +65,10 @@ public class ControllerHome {
 		ft.play();
 	}
 
+	/**
+	 * Metodo para esconder el menu
+	 * 
+	 */
 	private void hideNav() {
 		TranslateTransition tt = new TranslateTransition(Duration.seconds(0.1), nav);
 		tt.setByX(-500);

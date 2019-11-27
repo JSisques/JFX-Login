@@ -8,6 +8,12 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 
+/**
+ * 
+ * @author javi
+ * @see ControllerHome
+ *
+ */
 
 public class Main extends Application {
 	@Override
