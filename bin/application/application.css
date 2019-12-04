@@ -1,14 +1,101 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
 .loginContainer {
-    -fx-background-radius: 50px;
-    -fx-background-color: rgba(255,255,255,0.7);
+    -fx-background-radius: 50.0px;
+    -fx-background-color: rgba(255.0,255.0,255.0,0.7);
 }
 
 .button{
 	-fx-background-color: #BB336A;
 }
 
+.colorPrimario{
+	-fx-background-color: #BB336A;
+}
+
 .imgLogo{
-	-fx-border-radius: 50px;
+	-fx-border-radius: 50.0px;
+}
+
+.transparente{
+	-fx-background-color: rgba(255.0,255.0,255.0,0.0);
+}
+
+.pane1{
+	-fx-background-image: url("../../img/background/1.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.pane2{
+	-fx-background-image: url("../../img/background/2.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.pane3{
+	-fx-background-image: url("../../img/background/3.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.pane4{
+	-fx-background-image: url("../../img/background/4.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.background1{
+	-fx-background-image: url("../../img/home/1.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.background2{
+	-fx-background-image: url("../../img/home/2.jpg");    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.background3{
+	-fx-background-image: url("../../img/home/3.jpg");    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.background4{
+	-fx-background-image: url("../../img/home/4.jpg");    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.menuIcon{
+	-fx-background-image: url("../../img/menu-button.png");
+	-fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.btnGrid{
+	-fx-background-color: #BB336A;
+	  -fx-background-radius: 0.0px;
+}
+
+.btnGrid2{
+	-fx-background-color: #3BBC56;
+	  -fx-background-radius: 0.0px;
+}
+
+.capaBlanca{
+	    -fx-background-color: rgba(255.0,255.0,255.0,0.7);
+}
+
+.btnNav{
+	-fx-background-color: white;
+	  -fx-background-radius: 0.0px;
+}
+.btnNav:hover{
+	-fx-background-color: #BB336A;
+	-fx-text-fill: white;
+}
+
+.opacityPane{
+	-fx-background-color: black;
 }
