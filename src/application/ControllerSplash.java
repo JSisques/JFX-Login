@@ -49,7 +49,7 @@ public class ControllerSplash {
 		try {
 			// Load the fxml file and create a new stage for the popup.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("main.fxml"));
+			loader.setLocation(Main.class.getResource("wizard.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();
 			Stage homeStage = new Stage();
 			Scene scene = new Scene(page);
