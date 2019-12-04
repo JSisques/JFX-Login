@@ -1,1 +1,0 @@
-# JFX-Login Splash
