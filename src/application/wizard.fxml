@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WizardController">
+   <children>
+      <AnchorPane fx:id="pane1" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #BB336A;">
+         <children>
+            <ImageView fx:id="slide2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="250.0">
+               <image>
+                  <Image url="@../../img/wizard/verduras.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane2" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #3BBC56;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="250.0">
+               <image>
+                  <Image url="@../../img/wizard/panadero.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane3" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #BB336A;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="250.0">
+               <image>
+                  <Image url="@../../img/wizard/cocina.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label fx:id="slide" alignment="CENTER" text="hoola" textFill="white" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="descripcion" alignment="CENTER" layoutY="123.0" prefHeight="101.0" prefWidth="200.0" text="Unete a la lucha por una alimentación saludable" textAlignment="CENTER" textFill="white" wrapText="true" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="123.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="slide3" text="1/3" textFill="WHITE" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="515.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton onAction="#nextPane" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 50;-fx-background-color: white;" text="&gt;" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="500.0" />
+      <JFXButton onAction="#lastPane" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 50;-fx-background-color: white;" text="&lt;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="500.0" />
+      <JFXButton alignment="CENTER" onAction="#closeWizard" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 50;" text="X" textFill="white" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>
